@@ -1,0 +1,213 @@
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="false">
+    <div class="container-fluid justify-content-between">
+      <!-- Left elements -->
+      <div class="d-flex">
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+          <img
+            src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp"
+            height="20"
+            alt=""
+            loading="lazy"
+            style="margin-top: 2px;"
+          />
+        </a>
+  
+        <!-- Search form -->
+        <form class="input-group w-auto my-auto d-none d-sm-flex">
+          <input
+            autocomplete="off"
+            type="search"
+            class="form-control rounded"
+            placeholder="Search"
+            style="min-width: 125px;"
+          />
+          <span class="input-group-text border-0 d-none d-lg-flex"
+            ><i class="fas fa-search"></i
+          ></span>
+        </form>
+      </div>
+      <!-- Left elements -->
+  
+      <!-- Center elements -->
+      <ul class="navbar-nav flex-row d-none d-md-flex">
+        <li class="nav-item me-3 me-lg-1 active">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-home fa-lg"></i></span>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+        </li>
+  
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-flag fa-lg"></i></span>
+          </a>
+        </li>
+  
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-video fa-lg"></i></span>
+          </a>
+        </li>
+  
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-shopping-bag fa-lg"></i></span>
+          </a>
+        </li>
+  
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-users fa-lg"></i></span>
+            <span class="badge rounded-pill badge-notification bg-danger">2</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Center elements -->
+  
+      <!-- Right elements -->
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+            <img
+              src="https://mdbootstrap.com/img/new/avatars/1.webp"
+              class="rounded-circle"
+              height="22"
+              alt=""
+              loading="lazy"
+            />
+            <strong class="d-none d-sm-block ms-1">John</strong>
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-plus-circle fa-lg"></i></span>
+          </a>
+        </li>
+        <li mdbDropdown class="nav-item dropdown me-3 me-lg-1">
+          <a
+            class="nav-link dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            mdbDropdownToggle
+            aria-expanded="false"
+          >
+            <i class="fas fa-comments fa-lg"></i>
+  
+            <span class="badge rounded-pill badge-notification bg-danger">6</span>
+          </a>
+          <ul
+            mdbDropdownMenu
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li mdbDropdown class="nav-item dropdown me-3 me-lg-1">
+          <a
+            class="nav-link dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            mdbDropdownToggle
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell fa-lg"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">12</span>
+          </a>
+          <ul
+            mdbDropdownMenu
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li mdbDropdown class="nav-item dropdown me-3 me-lg-1">
+          <a
+            class="nav-link dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            mdbDropdownToggle
+            aria-expanded="false"
+          >
+            <i class="fas fa-chevron-circle-down fa-lg"></i>
+          </a>
+          <ul
+            mdbDropdownMenu
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right elements -->
+    </div>
+  </nav>
+
+  <div class="container-fluid sticky-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a href="index.html" class="navbar-brand">
+                <!-- <h1 class="text-white">SHREE<span class="text-dark"></span>JEE</h1> -->
+                <img src="assets/shreelogo.png" alt="" height="100px">
+            </a>
+            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="" class="nav-item nav-link active">Home</a>
+                    <a href="" class="nav-item nav-link">About</a>
+                    <a href="" class="nav-item nav-link">Services</a>
+                    <a href="" class="nav-item nav-link">Projects</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu bg-light mt-2">
+                            <a href="" class="dropdown-item">Features</a>
+                            <a href="" class="dropdown-item">Our Team</a>
+                            <a href="faq.html" class="dropdown-item">FAQs</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="index.html" class="nav-item nav-link ">Mob- 6266946992  </a>
+                </div>
+                <!-- <button type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                    data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
+            </div>
+        </nav>
+    </div>
+</div>
+  <!-- Navbar -->

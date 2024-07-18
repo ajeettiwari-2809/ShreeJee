@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/app/admin/add-vendor-by-admin/add-vendor-by-admin.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1712725108756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1712725131916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n })\r\n export class AddVendorByAdminComponent implements OnInit {\r\n \r\n   constructor() { }\r\n-\r\n+  addVendorForm: FormGroup;\r\n   ngOnInit(): void {\r\n    this. createForm();\r\n   }\r\n   createForm() {\r\n"
+                },
+                {
+                    "date": 1712725172756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import { Component, OnInit } from '@angular/core';\r\n+import { FormBuilder, FormGroup, Validators } from '@angular/forms';\r\n \r\n @Component({\r\n   selector: 'app-add-vendor-by-admin',\r\n   templateUrl: './add-vendor-by-admin.component.html',\r\n   styleUrls: ['./add-vendor-by-admin.component.css']\r\n })\r\n export class AddVendorByAdminComponent implements OnInit {\r\n \r\n-  constructor() { }\r\n+  constructor(private formBuilder: FormBuilder) { }\r\n   addVendorForm: FormGroup;\r\n   ngOnInit(): void {\r\n    this. createForm();\r\n   }\r\n"
+                },
+                {
+                    "date": 1712725192351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,9 @@\n       'defaulttemp': [null, Validators.required],\r\n       'defaultadditional': [null, Validators.required],\r\n     });\r\n   }\r\n+\r\n+  onSubmit(post) {\r\n+    this.post = post;\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1712725205290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n export class AddVendorByAdminComponent implements OnInit {\r\n \r\n   constructor(private formBuilder: FormBuilder) { }\r\n   addVendorForm: FormGroup;\r\n+  post: any = '';\r\n   ngOnInit(): void {\r\n    this. createForm();\r\n   }\r\n   createForm() {\r\n"
+                },
+                {
+                    "date": 1712725964430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n    this. createForm();\r\n   }\r\n   createForm() {\r\n     this.addVendorForm = this.formBuilder.group({\r\n-      'firstname': [null, Validators.required],\r\n+      'vendorName': [null, Validators.required],\r\n       'lastname': [null, Validators.required],\r\n       'defaultdyn': [null, Validators.required],\r\n       'defaulttemp': [null, Validators.required],\r\n       'defaultadditional': [null, Validators.required],\r\n"
+                },
+                {
+                    "date": 1712725976166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,30 @@\n+import { Component, OnInit } from '@angular/core';\r\n+import { FormBuilder, FormGroup, Validators } from '@angular/forms';\r\n+\r\n+@Component({\r\n+  selector: 'app-add-vendor-by-admin',\r\n+  templateUrl: './add-vendor-by-admin.component.html',\r\n+  styleUrls: ['./add-vendor-by-admin.component.css']\r\n+})\r\n+export class AddVendorByAdminComponent implements OnInit {\r\n+\r\n+  constructor(private formBuilder: FormBuilder) { }\r\n+  addVendorForm: FormGroup;\r\n+  post: any = '';\r\n+  ngOnInit(): void {\r\n+   this. createForm();\r\n+  }\r\n+  createForm() {\r\n+    this.addVendorForm = this.formBuilder.group({\r\n+      'vendorName': [null, Validators.required],\r\n+      'serviceType': [null, Validators.required],\r\n+      'defaultdyn': [null, Validators.required],\r\n+      'defaulttemp': [null, Validators.required],\r\n+      'defaultadditional': [null, Validators.required],\r\n+    });\r\n+  }\r\n+\r\n+  onSubmit(post) {\r\n+    this.post = post;\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1712725990415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   createForm() {\r\n     this.addVendorForm = this.formBuilder.group({\r\n       'vendorName': [null, Validators.required],\r\n       'serviceType': [null, Validators.required],\r\n-      'defaultdyn': [null, Validators.required],\r\n+      'vMobile': [null, Validators.required],\r\n       'defaulttemp': [null, Validators.required],\r\n       'defaultadditional': [null, Validators.required],\r\n     });\r\n   }\r\n"
+                },
+                {
+                    "date": 1712725999860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     this.addVendorForm = this.formBuilder.group({\r\n       'vendorName': [null, Validators.required],\r\n       'serviceType': [null, Validators.required],\r\n       'vMobile': [null, Validators.required],\r\n-      'defaulttemp': [null, Validators.required],\r\n+      'addhar': [null, Validators.required],\r\n       'defaultadditional': [null, Validators.required],\r\n     });\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1712726024024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,42 +19,13 @@\n       'vendorName': [null, Validators.required],\r\n       'serviceType': [null, Validators.required],\r\n       'vMobile': [null, Validators.required],\r\n       'addhar': [null, Validators.required],\r\n-      'defaultadditional': [null, Validators.required],\r\n+      'validityfrom': [null, Validators.required],\r\n+      'validityto': [null, Validators.required],\r\n     });\r\n   }\r\n \r\n   onSubmit(post) {\r\n     this.post = post;\r\n   }\r\n }\r\n-import { Component, OnInit } from '@angular/core';\r\n-import { FormBuilder, FormGroup, Validators } from '@angular/forms';\r\n-\r\n-@Component({\r\n-  selector: 'app-add-vendor-by-admin',\r\n-  templateUrl: './add-vendor-by-admin.component.html',\r\n-  styleUrls: ['./add-vendor-by-admin.component.css']\r\n-})\r\n-export class AddVendorByAdminComponent implements OnInit {\r\n-\r\n-  constructor(private formBuilder: FormBuilder) { }\r\n-  addVendorForm: FormGroup;\r\n-  post: any = '';\r\n-  ngOnInit(): void {\r\n-   this. createForm();\r\n-  }\r\n-  createForm() {\r\n-    this.addVendorForm = this.formBuilder.group({\r\n-      'vendorName': [null, Validators.required],\r\n-      'lastname': [null, Validators.required],\r\n-      'defaultdyn': [null, Validators.required],\r\n-      'defaulttemp': [null, Validators.required],\r\n-      'defaultadditional': [null, Validators.required],\r\n-    });\r\n-  }\r\n-\r\n-  onSubmit(post) {\r\n-    this.post = post;\r\n-  }\r\n-}\r\n"
+                },
+                {
+                    "date": 1712726669839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,8 @@\n     });\r\n   }\r\n \r\n   onSubmit(post) {\r\n+    console.log(post);\r\n     this.post = post;\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1712726884648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,13 @@\n \r\n   constructor(private formBuilder: FormBuilder) { }\r\n   addVendorForm: FormGroup;\r\n   post: any = '';\r\n+  foods: any = [\r\n+    {value: 'steak-0', viewValue: 'Steak'},\r\n+    {value: 'pizza-1', viewValue: 'Pizza'},\r\n+    {value: 'tacos-2', viewValue: 'Tacos'},\r\n+  ];\r\n   ngOnInit(): void {\r\n    this. createForm();\r\n   }\r\n   createForm() {\r\n"
+                },
+                {
+                    "date": 1712727412697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n   constructor(private formBuilder: FormBuilder) { }\r\n   addVendorForm: FormGroup;\r\n   post: any = '';\r\n   foods: any = [\r\n-    {value: 'steak-0', viewValue: 'Steak'},\r\n-    {value: 'pizza-1', viewValue: 'Pizza'},\r\n-    {value: 'tacos-2', viewValue: 'Tacos'},\r\n+    {id: 'steak-0', viewValue: 'Steak'},\r\n+    {id: 'pizza-1', viewValue: 'Pizza'},\r\n+    {id: 'tacos-2', viewValue: 'Tacos'},\r\n   ];\r\n   ngOnInit(): void {\r\n    this. createForm();\r\n   }\r\n"
+                },
+                {
+                    "date": 1712727561658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,12 @@\n \r\n   constructor(private formBuilder: FormBuilder) { }\r\n   addVendorForm: FormGroup;\r\n   post: any = '';\r\n-  foods: any = [\r\n-    {id: 'steak-0', viewValue: 'Steak'},\r\n-    {id: 'pizza-1', viewValue: 'Pizza'},\r\n-    {id: 'tacos-2', viewValue: 'Tacos'},\r\n+  services: any = [\r\n+    {id: 'All', viewValue: 'All'},\r\n+    {id: 'DriverOnly', viewValue: 'DriverOnly'},\r\n+    {id: 'VehicleOnly', viewValue: 'VehicleOnly'},\r\n   ];\r\n   ngOnInit(): void {\r\n    this. createForm();\r\n   }\r\n"
+                }
+            ],
+            "date": 1712725108756,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-add-vendor-by-admin',\r\n  templateUrl: './add-vendor-by-admin.component.html',\r\n  styleUrls: ['./add-vendor-by-admin.component.css']\r\n})\r\nexport class AddVendorByAdminComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n   this. createForm();\r\n  }\r\n  createForm() {\r\n    this.addVendorForm = this.formBuilder.group({\r\n      'firstname': [null, Validators.required],\r\n      'lastname': [null, Validators.required],\r\n      'defaultdyn': [null, Validators.required],\r\n      'defaulttemp': [null, Validators.required],\r\n      'defaultadditional': [null, Validators.required],\r\n    });\r\n  }\r\n}\r\n"
+        }
+    ]
+}

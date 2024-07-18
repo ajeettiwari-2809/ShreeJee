@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/Model/BillingDetail.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1712402516766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1712402516766,
+            "name": "Commit-0",
+            "content": "export class BillingDetail{\r\n    id: number;\r\n  appCode: any;\r\n  requesterBy: any;\r\n  requesterCode: any;\r\n  requesterMob: any;\r\n  reqdate: any;\r\n  reqtime: any;\r\n  noofperson: number;\r\n  vehicleShareIdicater: any;\r\n  vehicleShareIdicaterId: number;\r\n  vehicleNo: any;\r\n  vehiclehiredinhouse: any;\r\n  vehiclevendorcode: any;\r\n  vehiclevendorname: any;\r\n  startKM: number;\r\n  endKM: number;\r\n  totalRuningKM: number;\r\n  totalAmountKMBased: number;\r\n  paybaleAmount: number;\r\n  driverCode: any;\r\n  requestattime:any;\r\n  driverhiredinhouse: any;\r\n  driverName: any;\r\n  driverMobile: any;\r\n  startDate: any;\r\n  startTime: any;\r\n  endDate: any;\r\n  endTime: any;\r\n  expetdate:any;\r\n  expettime:any;\r\n  billDate: any;\r\n  appstatus: any;\r\n  requestTypeName: any;\r\n  trainno: any;\r\n  trainname: any;\r\n  vehiclereqwhere: any;\r\n  visitingplace: any;\r\n  purpose: any;\r\n  statusdetails: any;\r\n \r\n}"
+        }
+    ]
+}

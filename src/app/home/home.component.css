@@ -1,0 +1,89 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+   
+    
+  }
+
+  .page__box{
+ min-height: 120px;
+      /* background: #f83166; */
+      background: #e8173a;
+      margin: 0 -1rem;
+      font-size: 36px;
+  }
+ .page__content {
+    min-height: calc(100vh - 178px);
+    border-radius: 10px;
+    margin-top: -2rem;
+    background: white;
+    color: black;
+    font-size: 2rem;
+   
+  }
+  .page__content-data
+  {
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+
+  .col-sm-3:hover
+  {
+    box-shadow: 1px 1px 5px grey;
+    cursor: pointer;
+    /* background-color: ; */
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+height: 180;
+transition: all 1s linear;
+
+  }
+  mat-card:hover{
+ 
+
+  }
+  #formcard
+  {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+   
+  }
+  
+  /* @media screen and (max-width: 768px) {
+    .card{
+background-color: #e8173a;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+  .card{
+    background-color: #0093E9;
+    width: auto;
+  }
+  } */
+
+  .card {
+   
+    
+    padding: 5px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+
+
+  .card-footer {
+    font-weight: 700;
+    white-space: nowrap; /* Ensure text doesn't wrap to a new line */
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-footer {
+      font-size: small; /* Adjust font size for smaller screens */
+    }
+  }

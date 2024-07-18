@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/environments/environment.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1712236770273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1712236843291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n \r\n export const environment = {\r\n   production: false,\r\n   // apiurl: 'http://localhost:5004/'\r\n-  //  apiurl: 'https://appqas.prismcement.com/'\r\n-apiurl: 'https://asms.prismcement.com/'\r\n+   apiurl: 'https://appqas.prismcement.com/'\r\n+// apiurl: 'https://asms.prismcement.com/'\r\n //  apiurl: 'https://apps.prismcement.com/vpoolqas/',\r\n //  apiurl:\"https://appdev.prismcement.com/vpoolqas/\",\r\n // apiurl:'https://asms.prismcement.com/'\r\n  \r\n"
+                },
+                {
+                    "date": 1712237001800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n    apiurl: 'https://appqas.prismcement.com/'\r\n // apiurl: 'https://asms.prismcement.com/'\r\n //  apiurl: 'https://apps.prismcement.com/vpoolqas/',\r\n //  apiurl:\"https://appdev.prismcement.com/vpoolqas/\",\r\n-// apiurl:'https://asms.prismcement.com/'\r\n+\r\n  \r\n \r\n  \r\n \r\n"
+                },
+                {
+                    "date": 1712311578171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n \r\n export const environment = {\r\n   production: false,\r\n   // apiurl: 'http://localhost:5004/'\r\n-   apiurl: 'https://appqas.prismcement.com/'\r\n-// apiurl: 'https://asms.prismcement.com/'\r\n+  //  apiurl: 'https://appqas.prismcement.com/'\r\n+ apiurl: 'https://asms.prismcement.com/'\r\n //  apiurl: 'https://apps.prismcement.com/vpoolqas/',\r\n //  apiurl:\"https://appdev.prismcement.com/vpoolqas/\",\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1712383277082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n \r\n export const environment = {\r\n   production: false,\r\n   // apiurl: 'http://localhost:5004/'\r\n-  //  apiurl: 'https://appqas.prismcement.com/'\r\n- apiurl: 'https://asms.prismcement.com/'\r\n+   apiurl: 'https://appqas.prismcement.com/'\r\n+//  apiurl: 'https://asms.prismcement.com/'\r\n //  apiurl: 'https://apps.prismcement.com/vpoolqas/',\r\n //  apiurl:\"https://appdev.prismcement.com/vpoolqas/\",\r\n \r\n  \r\n"
+                }
+            ],
+            "date": 1712236770273,
+            "name": "Commit-0",
+            "content": "// This file can be replaced during build by using the `fileReplacements` array.\r\n// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.\r\n// The list of file replacements can be found in `angular.json`.\r\n\r\nexport const environment = {\r\n  production: false,\r\n  // apiurl: 'http://localhost:5004/'\r\n  //  apiurl: 'https://appqas.prismcement.com/'\r\napiurl: 'https://asms.prismcement.com/'\r\n//  apiurl: 'https://apps.prismcement.com/vpoolqas/',\r\n//  apiurl:\"https://appdev.prismcement.com/vpoolqas/\",\r\n// apiurl:'https://asms.prismcement.com/'\r\n \r\n\r\n \r\n\r\n  // apiurl:\"https://appdev.prismcement.com/vpoolqasfront/\",\r\n  // apiurl:'https://appdev.prismcement.com/vpool/',\r\n \r\n\r\n  //apiurl: 'https://appdev.prismcement.com/vpoolqas/',\r\n // Approval_Api_Url: 'https://asmsp.prismcement.com/ApprovalControllers/GetVehicleApprovalListHOD',\r\n\r\n};\r\n\r\n/*\r\n * For easier debugging in development mode, you can import the following file\r\n * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.\r\n *\r\n * This import should be commented out in production mode because it will have a negative impact\r\n * on performance if an error is thrown.\r\n */\r\n// import 'zone.js/dist/zone-error';  // Included with Angular CLI.\r\n"
+        }
+    ]
+}
