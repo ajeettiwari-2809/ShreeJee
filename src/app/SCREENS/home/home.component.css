@@ -29,11 +29,13 @@
     z-index: 99;
 }
 .back-to-whataspp {
+
     position: fixed;
     display: none;
     left: 45px;
     bottom: 45px;
     z-index: 99;
+
 }
 
 
@@ -340,11 +342,11 @@ h6,
 .case-item img {
     transition: .5s;
 }
-  
+
 .case-item:hover img {
     transform: scale(1.2);
 }
-  
+
 .case-overlay {
     position: absolute;
     padding: 30px;
